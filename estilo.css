@@ -1,0 +1,606 @@
+body {
+  background-color: #f5f0e6; /* tom suave e clássico */
+  font-family: 'Georgia', serif; /* fonte tradicional e elegante */
+  color: #3b2f2f; /* marrom escuro */
+  margin: 20px;
+}
+
+.boas-vindas {
+  text-align: center;
+  font-size: 1.4em;
+  color: #8b4513; /* castanho escuro, quente */
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.tabela-agendamento {
+  background-color: #fff8dc; /* bege claro */
+  border: 3px solid #daa520; /* dourado escuro */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* brilho dourado */
+}
+
+.tabela-agendamento caption {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #4169e1; /* azul royal */
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+.tabela-agendamento td {
+  padding: 8px 10px;
+  vertical-align: middle;
+  color: #5c4033; /* marrom tradicional */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #daa520;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  color: #3b2f2f;
+  background-color: #fff8dc;
+  box-shadow: inset 1px 1px 5px #f9f1c6;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4169e1; /* destaque azul */
+  outline: none;
+  box-shadow: 0 0 8px #4169e1aa;
+}
+
+.botao {
+  text-align: center;
+  padding-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: #008000; /* verde orixá Oxum */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px #004d00cc;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #004d00;
+  box-shadow: 0 6px 12px #002200cc;
+}
+
+.rodape {
+  text-align: center;
+  color: #8b4513;
+  font-style: italic;
+  padding-top: 12px;
+}
+
+#mensagem-confirmacao {
+  text-align: center;
+  font-weight: bold;
+  color: #006400; /* verde escuro */
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #b0ffb0;
+}
+body {
+  background-color: #f5f0e6; /* tom suave e clássico */
+  font-family: 'Georgia', serif; /* fonte tradicional e elegante */
+  color: #3b2f2f; /* marrom escuro */
+  margin: 20px;
+}
+
+.boas-vindas {
+  text-align: center;
+  font-size: 1.4em;
+  color: #8b4513; /* castanho escuro, quente */
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.tabela-agendamento {
+  background-color: #fff8dc; /* bege claro */
+  border: 3px solid #daa520; /* dourado escuro */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* brilho dourado */
+}
+
+.tabela-agendamento caption {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #4169e1; /* azul royal */
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+.tabela-agendamento td {
+  padding: 8px 10px;
+  vertical-align: middle;
+  color: #5c4033; /* marrom tradicional */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #daa520;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  color: #3b2f2f;
+  background-color: #fff8dc;
+  box-shadow: inset 1px 1px 5px #f9f1c6;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4169e1; /* destaque azul */
+  outline: none;
+  box-shadow: 0 0 8px #4169e1aa;
+}
+
+.botao {
+  text-align: center;
+  padding-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: #008000; /* verde orixá Oxum */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px #004d00cc;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #004d00;
+  box-shadow: 0 6px 12px #002200cc;
+}
+
+.rodape {
+  text-align: center;
+  color: #8b4513;
+  font-style: italic;
+  padding-top: 12px;
+}
+
+#mensagem-confirmacao {
+  text-align: center;
+  font-weight: bold;
+  color: #006400; /* verde escuro */
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #b0ffb0;
+}
+body {
+  background-color: #f5f0e6; /* tom suave e clássico */
+  font-family: 'Georgia', serif; /* fonte tradicional e elegante */
+  color: #3b2f2f; /* marrom escuro */
+  margin: 20px;
+}
+
+.boas-vindas {
+  text-align: center;
+  font-size: 1.4em;
+  color: #8b4513; /* castanho escuro, quente */
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.tabela-agendamento {
+  background-color: #fff8dc; /* bege claro */
+  border: 3px solid #daa520; /* dourado escuro */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* brilho dourado */
+}
+
+.tabela-agendamento caption {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #4169e1; /* azul royal */
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+.tabela-agendamento td {
+  padding: 8px 10px;
+  vertical-align: middle;
+  color: #5c4033; /* marrom tradicional */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #daa520;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  color: #3b2f2f;
+  background-color: #fff8dc;
+  box-shadow: inset 1px 1px 5px #f9f1c6;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4169e1; /* destaque azul */
+  outline: none;
+  box-shadow: 0 0 8px #4169e1aa;
+}
+
+.botao {
+  text-align: center;
+  padding-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: #008000; /* verde orixá Oxum */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px #004d00cc;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #004d00;
+  box-shadow: 0 6px 12px #002200cc;
+}
+
+.rodape {
+  text-align: center;
+  color: #8b4513;
+  font-style: italic;
+  padding-top: 12px;
+}
+
+#mensagem-confirmacao {
+  text-align: center;
+  font-weight: bold;
+  color: #006400; /* verde escuro */
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #b0ffb0;
+}
+body {
+  background-color: #f5f0e6; /* tom suave e clássico */
+  font-family: 'Georgia', serif; /* fonte tradicional e elegante */
+  color: #3b2f2f; /* marrom escuro */
+  margin: 20px;
+}
+
+.boas-vindas {
+  text-align: center;
+  font-size: 1.4em;
+  color: #8b4513; /* castanho escuro, quente */
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.tabela-agendamento {
+  background-color: #fff8dc; /* bege claro */
+  border: 3px solid #daa520; /* dourado escuro */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* brilho dourado */
+}
+
+.tabela-agendamento caption {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #4169e1; /* azul royal */
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+.tabela-agendamento td {
+  padding: 8px 10px;
+  vertical-align: middle;
+  color: #5c4033; /* marrom tradicional */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #daa520;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  color: #3b2f2f;
+  background-color: #fff8dc;
+  box-shadow: inset 1px 1px 5px #f9f1c6;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4169e1; /* destaque azul */
+  outline: none;
+  box-shadow: 0 0 8px #4169e1aa;
+}
+
+.botao {
+  text-align: center;
+  padding-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: #008000; /* verde orixá Oxum */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px #004d00cc;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #004d00;
+  box-shadow: 0 6px 12px #002200cc;
+}
+
+.rodape {
+  text-align: center;
+  color: #8b4513;
+  font-style: italic;
+  padding-top: 12px;
+}
+
+#mensagem-confirmacao {
+  text-align: center;
+  font-weight: bold;
+  color: #006400; /* verde escuro */
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #b0ffb0;
+}
+body {
+  background-color: #f5f0e6; /* tom suave e clássico */
+  font-family: 'Georgia', serif; /* fonte tradicional e elegante */
+  color: #3b2f2f; /* marrom escuro */
+  margin: 20px;
+}
+
+.boas-vindas {
+  text-align: center;
+  font-size: 1.4em;
+  color: #8b4513; /* castanho escuro, quente */
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.tabela-agendamento {
+  background-color: #fff8dc; /* bege claro */
+  border: 3px solid #daa520; /* dourado escuro */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* brilho dourado */
+}
+
+.tabela-agendamento caption {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #4169e1; /* azul royal */
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+.tabela-agendamento td {
+  padding: 8px 10px;
+  vertical-align: middle;
+  color: #5c4033; /* marrom tradicional */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #daa520;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  color: #3b2f2f;
+  background-color: #fff8dc;
+  box-shadow: inset 1px 1px 5px #f9f1c6;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4169e1; /* destaque azul */
+  outline: none;
+  box-shadow: 0 0 8px #4169e1aa;
+}
+
+.botao {
+  text-align: center;
+  padding-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: #008000; /* verde orixá Oxum */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px #004d00cc;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #004d00;
+  box-shadow: 0 6px 12px #002200cc;
+}
+
+.rodape {
+  text-align: center;
+  color: #8b4513;
+  font-style: italic;
+  padding-top: 12px;
+}
+
+#mensagem-confirmacao {
+  text-align: center;
+  font-weight: bold;
+  color: #006400; /* verde escuro */
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #b0ffb0;
+}
+body {
+  background-color: #f5f0e6; /* tom suave e clássico */
+  font-family: 'Georgia', serif; /* fonte tradicional e elegante */
+  color: #3b2f2f; /* marrom escuro */
+  margin: 20px;
+}
+
+.boas-vindas {
+  text-align: center;
+  font-size: 1.4em;
+  color: #8b4513; /* castanho escuro, quente */
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.tabela-agendamento {
+  background-color: #fff8dc; /* bege claro */
+  border: 3px solid #daa520; /* dourado escuro */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* brilho dourado */
+}
+
+.tabela-agendamento caption {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #4169e1; /* azul royal */
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+.tabela-agendamento td {
+  padding: 8px 10px;
+  vertical-align: middle;
+  color: #5c4033; /* marrom tradicional */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #daa520;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  color: #3b2f2f;
+  background-color: #fff8dc;
+  box-shadow: inset 1px 1px 5px #f9f1c6;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4169e1; /* destaque azul */
+  outline: none;
+  box-shadow: 0 0 8px #4169e1aa;
+}
+
+.botao {
+  text-align: center;
+  padding-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: #008000; /* verde orixá Oxum */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px #004d00cc;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #004d00;
+  box-shadow: 0 6px 12px #002200cc;
+}
+
+.rodape {
+  text-align: center;
+  color: #8b4513;
+  font-style: italic;
+  padding-top: 12px;
+}
+
+#mensagem-confirmacao {
+  text-align: center;
+  font-weight: bold;
+  color: #006400; /* verde escuro */
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #b0ffb0;
+}

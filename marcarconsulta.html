@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="estilo.css">
+
+
+<form onsubmit="simularEnvio(event)" class="form-agendamento">
+  <p class="boas-vindas">Sejam Bem-Vindos ao Ylê Ijexá Oxum Miwá</p>
+  <table class="tabela-agendamento">
+    <caption>Babalorixá Jonatas D' Oxum</caption>
+    <thead>
+      <tr>
+        <td colspan="2" class="titulo">Agendamento de Jogos e Consultas</td>
+      </tr>
+      <tr>
+        <td>Nome:</td>
+        <td><input type="text" name="nome" id="nome" required></td>
+      </tr>
+      <tr>
+        <td>Contato:</td>
+        <td><input type="text" name="contato" id="contato" required></td>
+      </tr>
+      <tr>
+        <td>Mensagem:</td>
+        <td><textarea name="mensagem" id="mensagem" rows="4" cols="30" placeholder="Escreva sua mensagem..."></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="botao">
+          <input type="submit" value="Agendar">
+        </td>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan="2" class="rodape">------------------------------------</td>
+      </tr>
+    </tfoot>
+  </table>
+</form>
+
+<div id="mensagem-confirmacao" style="display:none; text-align:center; font-weight:bold; color:green; margin-top:20px;">
+  Agendamento simulado com sucesso! Obrigado!
+</div>
+
+<script>
+function simularEnvio(event) {
+  event.preventDefault(); // evita envio real do formulário
+
+  // Captura valores dos campos
+  const nome = document.getElementById("nome").value.trim();
+  const contato = document.getElementById("contato").value.trim();
+  const mensagem = document.getElementById("mensagem").value.trim();
+
+  if (!nome || !contato) {
+    alert("Por favor, preencha os campos obrigatórios: Nome e Contato.");
+    return;
+  }
+
+  // Monta a mensagem para o WhatsApp
+  const textoWhatsApp = encodeURIComponent(
+    `Olá, quero agendar uma consulta/jogo.\nNome: ${nome}\nContato: ${contato}\nMensagem: ${mensagem}`
+  );
+
+  // Número do WhatsApp no formato internacional, só números, sem + ou espaços
+  const numeroWhatsApp = "5511999999999"; // <<== substitua pelo número desejado
+
+  // URL para abrir o WhatsApp com mensagem pronta
+  const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoWhatsApp}`;
+
+  // Exibe mensagem de sucesso
+  const confirmMsg = document.getElementById("mensagem-confirmacao");
+  confirmMsg.style.display = "block";
+
+  // Limpa os campos do formulário
+  document.querySelector(".form-agendamento").reset();
+
+  // Esconde a mensagem após 5 segundos
+  setTimeout(() => {
+    confirmMsg.style.display = "none";
+  }, 5000);
+
+  // Abre WhatsApp em nova aba para enviar a mensagem
+  window.open(urlWhatsApp, "_blank");
+}
+</script>
