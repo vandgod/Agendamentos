@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>YLÊ IJEXA OXUM MIWÁ - Pai Jonatas</title>
+    <style>
+        body {
+            margin: 80;
+            padding: 80;
+            font-family: 'Georgia', serif;
+            background-image: url('fundosite.jpg'); /* Plano de fundo - substitua pela imagem desejada */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .conteudo {
+            position: relative;
+            z-index: 1;
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            color: #fafaf8; /* Dourado */
+        }
+
+        .principal {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            width: 300px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form input::placeholder, form textarea::placeholder {
+            color: #765987;
+        }
+
+        .contato {
+            margin-top: 20px;
+        }
+
+        .decorativo {
+            margin-top: 40px;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        button {
+            background-color: #25D366;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sobreposição escura para destacar o conteúdo -->
+    <div class="overlay"></div>
+
+    <!-- Conteúdo principal -->
+    <div class="conteudo">
+        <h1>PAGINA DE TESTES</h1>
+        <h3><p></p></h3>
+
+        <div class="principal">
+            <!-- Lista de serviços -->
+            <ul>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+
+            <!-- Formulário -->
+            <form>
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="contato">Seu contato:</label>
+                <input type="text" id="contato" name="contato" placeholder="WhatsApp ou telefone" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua dúvida, pedido ou intenção..." required></textarea>
+            </form>
+        </div>
+
+        <!-- Botão WhatsApp -->
+        <div class="contato">
+            <a href="https://wa.me/5551989727254?text=Olá%2C%20gostaria%20de%20uma%20consulta%20espiritual." target="_blank">
+                <button>Agendar Consulta via WhatsApp</button>
+            </a>
+        </div>
+
+        <!-- Área decorativa -->
+        <div class="decorativo">
+            <p>Axé! Que a força dos Orixás guiem seu caminho.</p>
+
+            <!-- Ícones representando os Orixás -->
+            <img src="abelha.png" alt="abelha.png" width="60" style="margin: 10px;">
+            <img src="abelha.png" alt="abelha" width="60" style="margin: 10px;">
+            <img src="abelha.png" alt="abelha" width="60" style="margin: 10px;">
+        </div>
+    </div>
+</body>
+</html>
